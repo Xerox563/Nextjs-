@@ -15,3 +15,11 @@ export default function Asset() {
 // img ka size screen size bdaane pr bdta rehta hai on the other hand Image (nextjs) waali intact rehti hai
 // nextjs image waali component pr lazy load and other feature addon krta hai
 // nextjs security bhi provide krta hai (you have to register domains )
+
+
+export function generateMetadata() {
+  return (
+    title:"Image Optimization",
+    description:"Optimizing Image using next/image (Image Component)"
+  )
+}
