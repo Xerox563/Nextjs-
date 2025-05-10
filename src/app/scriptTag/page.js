@@ -1,7 +1,14 @@
+"use client";
+import Script from "next/script";
 const page = () => {
   return (
     <div>
-      <h1>Hello </h1>
+      <h1>Script Tag : Getting current Location </h1>
+      <Script
+        src="/location.js"
+        strategy="afterInteractive"
+        onLoad={console.log("File Loaded")}
+      />
     </div>
   );
 };
@@ -34,7 +41,8 @@ Prevents duplication and offers scope control using the id attribute.
 
 🌐 Avoids Double Loading or Race Conditions
 Helps control execution order and avoids issues caused by conflicting scripts.
-
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 * ❌ Problems with Regular <script> Tag (Not Recommended)
 ⏳ Blocks Rendering
 Scripts in the <head> can block the HTML parsing and delay page load.
