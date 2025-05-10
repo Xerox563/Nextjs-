@@ -1,7 +1,34 @@
-<<<<<<< HEAD
-"# Nextjs-Building-using-Projects-" 
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Next.js Learning Repository
+
+Welcome to my **Next.js Learning Repo**!  
+This is a personal space where I practice, experiment, and take notes while learning Next.js through official documentation, tutorials, and hands-on coding.
+
+---
+
+## 📘 About This Repo
+
+This repository is a collection of:
+
+- ✅ Code examples from Next.js docs & tutorials
+- 🧪 Mini projects and feature demos
+- 📝 Notes, tips, and learnings
+- 🛠️ Experiments with routing, data fetching, styling, and more
+
+---
+
+## 📚 Topics Covered
+
+- App Router vs Pages Router
+- Routing & Layouts
+- API Routes
+- Image Optimization with `next/image`
+- Font Optimization with `next/font`
+- Static Site Generation (SSG) & Server-Side Rendering (SSR)
+- Dynamic Routes
+- Middleware & Authentication (coming soon)
+- Deployment (e.g., Vercel)
+
+---
 
 ## Getting Started
 
