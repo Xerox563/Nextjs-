@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import { UserContext } from "./contextApi/contextApi/userContext";
-import { CircleLoader } from "react-spinners";
+import { CircleLoader, RotateLoader } from "react-spinners";
 
 // Below of Redux
 import { useSelector, useDispatch } from "react-redux";
@@ -28,19 +28,25 @@ const UserList = () => {
 
   if (!users || users.length === 0) {
     return (
-      <div className="mt-[240px] ml-[279px]">
-        <CircleLoader color="blue" size={70} />
+      <div className="flex items-center justify-center h-screen">
+        <CircleLoader color="purple" size={70} />
       </div>
     );
   }
   return (
-    <ul>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {users.map((user) => (
-        <li key={user.id}>
-          {user.firstName} {user.lastName} - {user.email}
-        </li>
+        <div
+          key={user.id}
+          className="bg-blue-300 shadow-md rounded-xl p-12  border border-gray-200"
+        >
+          <h2 className="text-xl font-semibold text-gray-800">
+            {user.firstName} {user.lastName}
+          </h2>
+          <p className="text-gray-600">{user.email}</p>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 

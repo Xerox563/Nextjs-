@@ -1,0 +1,9 @@
+.success {
+  color: green;
+  border: 2px solid rgb(15, 52, 15);
+}
+
+.danger {
+  color: red;
+  border: 2px solid rgb(112, 8, 8);
+}
